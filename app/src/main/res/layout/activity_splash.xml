@@ -9,7 +9,6 @@
         android:layout_height="200dp"
         android:src="@drawable/logo"
         android:layout_centerInParent="true"/>
-
     <TextView
         android:layout_width="125dp"
         android:layout_height="wrap_content"
