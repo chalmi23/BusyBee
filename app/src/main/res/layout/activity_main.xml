@@ -2,27 +2,34 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
+    android:background="#333333"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
    <TextView
        android:id="@+id/taskText"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:textStyle="bold"
-       android:text="Tasks"
-       android:textColor="@android:color/black"
-       android:layout_marginStart="16dp"
-       android:layout_marginBottom="16dp"
+       android:layout_alignParentStart="true"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentEnd="true"
+       android:layout_marginStart="148dp"
        android:layout_marginTop="16dp"
-       android:textSize="30sp"/>
+       android:layout_marginEnd="148dp"
+       android:layout_marginBottom="16dp"
+       android:text="Zadania
+"
+       android:textColor="@android:color/black"
+       android:textSize="30sp"
+       android:textStyle="bold" />
 
    <androidx.recyclerview.widget.RecyclerView
        android:id="@+id/taskRecyclerView"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:layout_below="@+id/taskText"
-       app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-       android:nestedScrollingEnabled="true"/>
+       android:layout_marginTop="16dp"
+       android:nestedScrollingEnabled="true"
+       app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
 
    <com.google.android.material.floatingactionbutton.FloatingActionButton
        android:id="@+id/floatingActionButton"
