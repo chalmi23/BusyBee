@@ -18,7 +18,7 @@
        android:layout_marginBottom="16dp"
        android:text="Zadania
 "
-       android:textColor="@android:color/black"
+       android:textColor="@color/cream"
        android:textSize="30sp"
        android:textStyle="bold" />
 
